@@ -1,3 +1,5 @@
+#Function to compute column-wise summary on a multiple sequence alignment
+
 import time
 import subprocess
 import sys
@@ -17,7 +19,10 @@ input_length_lstm = 10000
 block_length = 80
 
 def subsets(lines):
-
+    """
+    :param lines: Muliple sequence alignment to be preprocessed
+    :return: A 200x200x17 tensor for the neural network
+    """
     num_positions = block_length
     np.random.seed(int.from_bytes(os.urandom(4), byteorder='little'))
     raw_msa = np.array([x.decode().strip().split(' ')[-1] for x in lines[1:]])
