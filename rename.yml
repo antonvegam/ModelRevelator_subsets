@@ -1,0 +1,10 @@
+#Training with 28000 alignments, validation 1000 alignments, both of 1000bp using column-subsets strategy with 17 features.
+
+LOG_DIR: /scratch/anton/experiments/2022-03-14_first_run
+TRAIN_DATA_DIR: /scratch/anton/train_data
+TEST_DATA_DIR: /scratch/anton/test_data
+
+
+epoch_steps: 2100 #7000*12/batch_size
+validation_steps: 75 #250*12/40
+lr: 0.000001 
