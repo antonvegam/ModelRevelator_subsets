@@ -1,0 +1,9 @@
+# Training random sized subsets of summary statistics following colmn-wise aproach, with 16 features. Training data also contains the random subset size column-wise summary statistcs and the pair-wise subsets.
+LOG_DIR: /scratch/anton/experiments/21-4_pairwise_moreepochs
+TRAIN_DATA_DIR: /scratch/anton/train_data/25-4_pairwise+complex
+TEST_DATA_DIR: /scratch/anton/test_data/25-4
+
+
+epoch_steps: 2100 #7000*12/batch_size
+validation_steps: 75 #250*12/40
+lr: 0.000001 
