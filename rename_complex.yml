@@ -1,0 +1,9 @@
+# Training random sized subsets of summary statistics following pair-wise aproach and overmore doing the same thing and picking the 20 more complex sequences for each subset.
+LOG_DIR: /scratch/anton/experiments/20-5_complex
+TRAIN_DATA_DIR: /scratch/anton/train_data/3-5
+TEST_DATA_DIR: /scratch/anton/test_data/3-5
+
+
+epoch_steps: 240000
+validation_steps: 12480
+lr: 0.000001 
